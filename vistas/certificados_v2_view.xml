@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+<data>
+
+    <record model="ir.ui.view" id="view_inces_certificados_form">
+        <field name="name">inces_certificados.form</field>
+        <field name="model">inces_certificados</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="inces_certificados">
+                <sheet>
+                   <notebook colspan="4">
+                     <page string="Certificados">
+                       <group col="4" colspan="4">
+                <field name="correlativo" select="1"/>
+                <field name="maestro_id" select="2"/>
+                <field name="saber" select="0"/>
+                <field name="horas" select="0"/>
+                <field name="fecha_certificado" select="0"/>
+                <field name="fecha_consignado" select="0"/>
+                <field name="libro" select="0"/>
+                <field name="folio" select="0"/>
+                <field name="linea" select="0"/>
+
+                       </group>
+                               
+                     </page>
+                  </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_inces_certificados_tree">
+        <field name="name">inces_certificados.tree</field>
+        <field name="model">inces_certificados</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="inces_certificados">
+                <field name="correlativo"/>
+                <field name="maestro_id"/>
+                <field name="saber"/>
+                <field name="horas"/>
+                <field name="fecha_certificado"/>
+                <field name="fecha_consignado"/>
+                <field name="libro"/>
+                <field name="folio"/>
+                <field name="linea"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_inces_certificados">
+        <field name="name">Certificados</field>
+        <field name="res_model">inces_certificados</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haz click aquí
+                </p><p>
+                    <h3>Registro Maestro de Certificados</h3>
+                </p>
+        </field>
+    </record>
+ <menuitem name="Certificados" id="menu_inces_certificados" action="action_inces_certificados"/>
+        
+    <record model="ir.ui.view" id="view_inces_maestros_form">
+        <field name="name">inces_maestros.form</field>
+        <field name="model">inces_maestros</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="inces_maestros">
+                <sheet>
+                   <notebook colspan="4">
+                     <page string="Maestros">
+                       <group col="4" colspan="4">
+                <field name="cedula" select="1"/>
+                <field name="nombres" select="2"/>
+                <field name="apellidos" select="0"/>
+
+                       </group>
+                               
+                     </page>
+                  </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_inces_maestros_tree">
+        <field name="name">inces_maestros.tree</field>
+        <field name="model">inces_maestros</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="inces_maestros">
+                <field name="cedula"/>
+                <field name="nombres"/>
+                <field name="apellidos"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_inces_maestros">
+        <field name="name">Maestros</field>
+        <field name="res_model">inces_maestros</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haz click aquí
+                </p><p>
+                    <h3>Registro de Maestros</h3>
+                </p>
+        </field>
+    </record>
+ <menuitem name="Maestros" id="menu_inces_maestros" action="action_inces_maestros"/>
+        
+</data>
+</openerp>
