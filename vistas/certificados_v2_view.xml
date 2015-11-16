@@ -3,7 +3,9 @@
 <data>
 
     <record model="ir.ui.view" id="view_inces_certificados_form">
-        <field name="name">inces_certificados.form</field>
+        <!-- modificare el name para percatarnos de los cambios en la vista
+        <field name="name">inces_certificados.form</field> -->
+        <field name="name">certificados_de_prueba.form</field>
         <field name="model">inces_certificados</field>
         <field name="type">form</field>
         <field name="arch" type="xml">
@@ -35,7 +37,9 @@
         <field name="model">inces_certificados</field>
         <field name="type">tree</field>
         <field name="arch" type="xml">
-            <tree string="inces_certificados">
+            <!-- modificare esta etiqueta para percatarme del cambio en la interfaz -->
+            <!-- <tree string="inces_certificados"> -->
+			<tree string="certificados de practica">
                 <field name="correlativo"/>
                 <field name="maestro_id"/>
                 <field name="saber"/>
@@ -62,6 +66,8 @@
                 </p>
         </field>
     </record>
+
+ <!-- Creamos la accion del menu para certificados -->
  <menuitem name="Certificados" id="menu_inces_certificados" action="action_inces_certificados"/>
         
     <record model="ir.ui.view" id="view_inces_maestros_form">
@@ -112,6 +118,7 @@
                 </p>
         </field>
     </record>
+ 
  <menuitem name="Maestros" id="menu_inces_maestros" action="action_inces_maestros"/>
         
 </data>
