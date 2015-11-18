@@ -68,8 +68,8 @@
     </record>
 
  <!-- Creamos la accion del menu para certificados -->
- <menuitem name="Certificados" id="menu_inces_certificados" action="action_inces_certificados"/>
-        
+
+
     <record model="ir.ui.view" id="view_inces_maestros_form">
         <field name="name">inces_maestros.form</field>
         <field name="model">inces_maestros</field>
@@ -120,6 +120,11 @@
     </record>
  
  <menuitem name="Maestros" id="menu_inces_maestros" action="action_inces_maestros"/>
-        
+ <menuitem name="Certificados" id="menu_inces_certificados" action="action_inces_certificados"/>
+
+
+	<!-- 1er Menú en la Barra de Menu (Panel Izquierdo) -->
+    <menuitem name="MAESTROS" id="menu_for_maestros" parent="menu_inces_maestros" action="action_inces_maestros" sequence="10"/>
+   
 </data>
 </openerp>
