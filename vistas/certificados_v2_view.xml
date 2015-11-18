@@ -125,6 +125,6 @@
 
 	<!-- 1er Menú en la Barra de Menu (Panel Izquierdo) -->
     <menuitem name="MAESTROS" id="menu_for_maestros" parent="menu_inces_maestros" action="action_inces_maestros" sequence="10"/>
-   
+    <menuitem name="CERTIFICADOS" id="menu_for_certificados" parent="menu_inces_certificados" action="action_inces_certificados" sequence="20"/>
 </data>
 </openerp>
