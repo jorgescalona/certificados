@@ -10,24 +10,30 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form string="inces_certificados">
+                <header>
+                <!-- Esta seccion es usadas por lo general para colocar botones entre las marcas button -->
+					<header string="Certificados" />
+                </header>
+                
                 <sheet>
-                   <notebook colspan="4">
-                     <page string="Certificados">
-                       <group col="4" colspan="4">
-                <field name="correlativo" select="1"/>
-                <field name="maestro_id" select="2"/>
-                <field name="saber" select="0"/>
-                <field name="horas" select="0"/>
-                <field name="fecha_certificado" select="0"/>
-                <field name="fecha_consignado" select="0"/>
-                <field name="libro" select="0"/>
-                <field name="folio" select="0"/>
-                <field name="linea" select="0"/>
-
-                       </group>
-                               
-                     </page>
-                  </notebook>
+					<group name="group_arriba">
+						<group name="group_left">
+							<field name="correlativo" select="1"/>
+							<field name="maestro_id" select="2"/>
+							<field name="saber" select="0"/>
+							<field name="horas" select="0"/>
+						</group>
+						<group name="group_rigth">
+							<field name="fecha_certificado" select="0"/>
+							<field name="fecha_consignado" select="0"/>
+							<field name="libro" select="0"/>
+							<field name="folio" select="0"/>
+							<field name="linea" select="0"/>
+						</group>
+					
+					</group>
+                   
+                   
                 </sheet>
             </form>
         </field>
